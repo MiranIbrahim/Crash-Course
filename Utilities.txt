@@ -1,0 +1,23 @@
+Repository link : https://github.com/programming-hero-web-course2/my-course-roster-MiranIbrahim
+
+Live link :  
+
+
+
+
+Add at least 3 Project features
+
+Discuss how you managed the state in your assignment project.
+
+
+
+
+General Q/A:
+
+Total calculation করাটা optional
+Responsive করাটা optional
+Fake data তুমি বানাবে। json বানাবে অবশ্যই।
+ছবি তুমি imgbb বা অন্য কোথাও হোস্ট করে ডিরেক্ট লিংক ব্যাবহার করবে json এ। 
+ডাটা তে যে নাম এবং description আছে সেগুলো figma তে দেওয়া কার্ডগুলোর নাম এবং ডেসক্রিপশন এর সাথে না মিললেও কোনো সমস্যা নাই। তবে অবশ্যই কোর্স বুঝায় এমন নাম এবং description দিবে তোমার fake data তে।
+GitHub এর মিনিংফুল কমিট মানে হলো git commit এর মেসেজটি অর্থবহ হতে হবে অর্থাৎ তুমি যে ফিচার কমপ্লিট করবে সেটি রিলেটেড একটা মেসেজ দিয়ে কমিট করবে। done, final, ইত্যাদি লিখে কমিট করবে না।
+Readme ফাইল কিভাবে বানাবে? -এইটা গ্রুপে পোস্ট না করে গুগলকে জিজ্ঞেস করে ফেলো।

@@ -1,65 +1,74 @@
 [
     {
+      "id": 1,
       "img": "https://i.ibb.co/G0FXfYP/1-python.png",
       "course_name": "Introduction to Python Programming",
-      "credit": 3,
-      "price": 49.99,
+      "credit": 1,
+      "price": 15000,
       "detail": "Learn the fundamentals of Python programming language."
     },
     {
+      "id": 2,
       "img": "https://i.ibb.co/8Mw8fxJ/2-web-development.png",
       "course_name": "Web Development with HTML, CSS, and JavaScript",
-      "credit": 4,
-      "price": 69.99,
+      "credit": 2.5,
+      "price": 25000,
       "detail": "Build modern and responsive websites with the latest web technologies."
     },
     {
+      "id": 3,
       "img": "https://i.ibb.co/MZmYPRz/3-data-science.png",
       "course_name": "Data Science and Machine Learning",
-      "credit": 5,
-      "price": 89.99,
+      "credit": 10,
+      "price": 10000,
       "detail": "Explore the world of data science and machine learning algorithms."
     },
     {
+      "id": 4,
       "img": "https://i.ibb.co/30kwzYw/4-digital-marketing.png",
-      "course_name": "Digital Marketing Fundamentals",
+      "course_name": "Digital Marketing Fundamentals And SEO",
       "credit": 3,
-      "price": 59.99,
+      "price": 35000,
       "detail": "Learn the basics of digital marketing and online advertising."
     },
     {
+      "id": 5,
       "img": "https://i.ibb.co/SsPSMN8/5-graphics-design.png",
-      "course_name": "Graphic Design for Beginners",
+      "course_name": "Graphic Design from Beginner to Advance ",
       "credit": 2,
-      "price": 39.99,
+      "price": 19000,
       "detail": "Get started with graphic design using industry-standard tools."
     },
     {
+      "id": 6,
       "img": "https://i.ibb.co/cbSV0JX/6-js.png",
       "course_name": "JavaScript for Frontend Development",
-      "credit": 3,
-      "price": 49.99,
+      "credit": 5,
+      "price": 23000,
       "detail": "Master the art of client-side scripting with JavaScript."
     },
     {
+      "id": 7,
       "img": "https://i.ibb.co/F6BLWL2/7-sql.png",
       "course_name": "Introduction to SQL and Databases",
-      "credit": 3,
-      "price": 49.99,
+      "credit": 4.5,
+      "price": 12000,
       "detail": "Learn the basics of SQL and working with databases."
     },
     {
+      "id": 8,
       "img": "https://i.ibb.co/chCt8P3/8-react-native.png",
       "course_name": "Mobile App Development with React Native",
       "credit": 4,
-      "price": 69.99,
+      "price": 20000,
       "detail": "Build cross-platform mobile apps with React Native framework."
     },
     {
+      "id": 9,
       "img": "https://i.ibb.co/QHFZFGS/9-ui-ux.png",
-      "course_name": "UX/UI Design Principles",
-      "credit": 2,
-      "price": 39.99,
+      "course_name": "UX/UI Design Principles from Basic to Advance",
+      "credit": 7,
+      "price": 21000,
       "detail": "Learn the fundamentals of user experience and user interface design."
     }
   ]
