@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-const Cart = ({selectedCourses}) => {
+const Cart = ({selectedCourses, remaining, totalCost}) => {
 
-    console.log(selectedCourses);
+    
 
   return (
     <div>
       <div className="pb-4 border-b-2 border-gray-300">
-        <h4 className="font-semibold">Credit Hour Remaining {10} hr</h4>
+        <h4 className="font-semibold">Credit Hour Remaining {remaining} hr</h4>
       </div>
       <div className="mt-2 pb-2 border-b-2 border-gray-300">
       <h2 className="text-xl font-bold">Course Name</h2>
@@ -19,10 +19,10 @@ const Cart = ({selectedCourses}) => {
       </ol>
       </div>
       <div className="mt-2 pb-2 border-b-2 border-gray-300 font-semibold">
-        <p>Total Credit Hour : </p>
+        <p>Total Credit Hour : {20-remaining} </p>
       </div>
       <div className="mt-2 pb-2 border-b-2 border-gray-300 font-semibold">
-        <p>Total Price :  Taka</p>
+        <p>Total Price : {totalCost}  Taka</p>
       </div>
 
     </div>
