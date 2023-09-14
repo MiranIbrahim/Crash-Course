@@ -1,30 +1,43 @@
 import { LuDollarSign } from "react-icons/lu";
 import { BsBook } from "react-icons/bs";
 import { useEffect, useState } from "react";
+import Cart from "../Cart/Cart";
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
+  const [selectedCourses, setSelectedCourses] = useState([]);
 
   useEffect(() => {
     fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setCourses(data));
   }, []);
+
+  const handleSelectedCourse = (course) =>{
+    const isExist = selectedCourses.find(item => item.id == course.id);
+    if(isExist){
+        return alert('This course is already in the cart');
+    }
+    else{
+        const newSelectedCourse = [...selectedCourses,course];
+        setSelectedCourses(newSelectedCourse);
+    }
+  }
   return (
     <div id="main-body">
       <h1 className="text-4xl font-bold text-center">Course Registration</h1>
-      <div id="home-container">
-        <div id="card-container" className="flex flex-wrap gap-4">
+      <div id="home-container" className="mt-8 flex gap-16">
+        <div id="card-container" className="grid grid-cols-3 gap-16 w-3/4">
           {courses.map((course) => (
 
             <div
               id="card"
               key={course.id}
-              className="w-80 p-4 rounded bg-white mt-8 border"
+              className="w-72 p-4 rounded bg-white mb-3 border"
             >
               <figure className="mb-4">
                 <img
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                   src={course.img}
                   alt=""
                 />
@@ -42,15 +55,20 @@ const Home = () => {
                 <p className="text-gray-600">Credit : {course.credit}hr</p>
               </div>
               <div className="flex justify-center mt-4">
-                <button className="bg-blue-600 text-white w-full p-2 rounded font-semibold">
+                <button onClick={() => handleSelectedCourse(course)} className="bg-blue-600 text-white w-full p-2 rounded font-semibold">
                   Select
                 </button>
               </div>
             </div>
           ))}
         </div>
-        
+        <div id="cart-container" className="w-1/4 pl-7">
+            <Cart 
+            selectedCourses={selectedCourses}
+            ></Cart>
+        </div>  
       </div>
+      
     </div>
   );
 };
