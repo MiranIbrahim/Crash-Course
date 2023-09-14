@@ -1,0 +1,66 @@
+[
+    {
+      "img": "https://i.ibb.co/G0FXfYP/1-python.png",
+      "course_name": "Introduction to Python Programming",
+      "credit": 3,
+      "price": 49.99,
+      "detail": "Learn the fundamentals of Python programming language."
+    },
+    {
+      "img": "https://i.ibb.co/8Mw8fxJ/2-web-development.png",
+      "course_name": "Web Development with HTML, CSS, and JavaScript",
+      "credit": 4,
+      "price": 69.99,
+      "detail": "Build modern and responsive websites with the latest web technologies."
+    },
+    {
+      "img": "https://i.ibb.co/MZmYPRz/3-data-science.png",
+      "course_name": "Data Science and Machine Learning",
+      "credit": 5,
+      "price": 89.99,
+      "detail": "Explore the world of data science and machine learning algorithms."
+    },
+    {
+      "img": "https://i.ibb.co/30kwzYw/4-digital-marketing.png",
+      "course_name": "Digital Marketing Fundamentals",
+      "credit": 3,
+      "price": 59.99,
+      "detail": "Learn the basics of digital marketing and online advertising."
+    },
+    {
+      "img": "https://i.ibb.co/SsPSMN8/5-graphics-design.png",
+      "course_name": "Graphic Design for Beginners",
+      "credit": 2,
+      "price": 39.99,
+      "detail": "Get started with graphic design using industry-standard tools."
+    },
+    {
+      "img": "https://i.ibb.co/cbSV0JX/6-js.png",
+      "course_name": "JavaScript for Frontend Development",
+      "credit": 3,
+      "price": 49.99,
+      "detail": "Master the art of client-side scripting with JavaScript."
+    },
+    {
+      "img": "https://i.ibb.co/F6BLWL2/7-sql.png",
+      "course_name": "Introduction to SQL and Databases",
+      "credit": 3,
+      "price": 49.99,
+      "detail": "Learn the basics of SQL and working with databases."
+    },
+    {
+      "img": "https://i.ibb.co/chCt8P3/8-react-native.png",
+      "course_name": "Mobile App Development with React Native",
+      "credit": 4,
+      "price": 69.99,
+      "detail": "Build cross-platform mobile apps with React Native framework."
+    },
+    {
+      "img": "https://i.ibb.co/QHFZFGS/9-ui-ux.png",
+      "course_name": "UX/UI Design Principles",
+      "credit": 2,
+      "price": 39.99,
+      "detail": "Learn the fundamentals of user experience and user interface design."
+    }
+  ]
+  
