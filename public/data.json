@@ -37,7 +37,7 @@
       "course_name": "Graphic Design from Beginner to Advance ",
       "credit": 2,
       "price": 19000,
-      "detail": "Get started with graphic design using industry-standard tools."
+      "detail": "Get started with professional graphic design using industry-standard tools."
     },
     {
       "id": 6,
@@ -45,7 +45,7 @@
       "course_name": "JavaScript for Frontend Development",
       "credit": 5,
       "price": 23000,
-      "detail": "Master the art of client-side scripting with JavaScript."
+      "detail": "Master the art of client-side scripting with JavaScript for frontend."
     },
     {
       "id": 7,
@@ -53,7 +53,7 @@
       "course_name": "Introduction to SQL and Databases",
       "credit": 4.5,
       "price": 12000,
-      "detail": "Learn the basics of SQL and working with databases."
+      "detail": "Learn the basics of SQL and working with databases and mySQL server."
     },
     {
       "id": 8,

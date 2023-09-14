@@ -46,8 +46,8 @@ const Home = () => {
     <div id="main-body" className="mx-auto">
         <ToastContainer />
       <h1 className="text-4xl font-bold text-center">Course Registration</h1>
-      <div id="home-container" className="mt-8 flex gap-16">
-        <div id="card-container" className="flex w-11/12 flex-wrap gap-16">
+      <div id="home-container" className="mt-8 flex gap-8">
+        <div id="card-container" className="max-w-3/4 grid grid-cols-3 gap-4 mx-auto">
           {courses.map((course) => (
             <div
               id="card"
@@ -76,7 +76,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div id="cart-container" className="w-1/4">
+        <div id="cart-container" className="w-1/4 mx-auto">
           <Cart 
           totalCost={totalCost}
           remaining={remaining}
