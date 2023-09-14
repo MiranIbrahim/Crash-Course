@@ -2,6 +2,9 @@ import { LuDollarSign } from "react-icons/lu";
 import { BsBook } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Home = () => {
   const [courses, setCourses] = useState([]);
@@ -22,7 +25,7 @@ const Home = () => {
     let courseTime = course.credit;
     let cost = course.price;
     if (isExist) {
-      return alert("This course is already in the cart");
+        toast.error('Already you added this course');
     } else {
       selectedCourses.forEach((item) => {
         courseTime += item.credit;
@@ -30,7 +33,7 @@ const Home = () => {
       });
       const remaining = hr - courseTime;
       if (remaining < 0) {
-        alert("You can not set courses over 20 hr");
+        toast.error("You can not set courses over 20 hr");
       } else {
         setTotalCost(cost);
         setRemaining(remaining);
@@ -40,22 +43,23 @@ const Home = () => {
     }
   };
   return (
-    <div id="main-body">
+    <div id="main-body" className="mx-auto">
+        <ToastContainer />
       <h1 className="text-4xl font-bold text-center">Course Registration</h1>
       <div id="home-container" className="mt-8 flex gap-16">
-        <div id="card-container" className="grid grid-cols-3 gap-16 w-3/4">
+        <div id="card-container" className="flex w-11/12 flex-wrap gap-16">
           {courses.map((course) => (
             <div
               id="card"
               key={course.id}
-              className="w-72 p-4 rounded bg-white mb-3 border"
+              className="w-64 p-4 rounded bg-white mb-3 border"
             >
               <figure className="mb-4">
                 <img className="rounded-lg w-full" src={course.img} alt="" />
               </figure>
               <h3 className="font-bold text-lg">{course.course_name}</h3>
               <p className="text-gray-600">{course.detail}</p>
-              <div className="flex justify-around items-center text-lg">
+              <div className="flex justify-around items-center">
                 <LuDollarSign className="font-bold text-gray-800 "></LuDollarSign>
                 <p className="text-gray-600">Price : {course.price} </p>
                 <BsBook></BsBook>
@@ -72,7 +76,7 @@ const Home = () => {
             </div>
           ))}
         </div>
-        <div id="cart-container" className="w-1/4 pl-7">
+        <div id="cart-container" className="w-1/4">
           <Cart 
           totalCost={totalCost}
           remaining={remaining}
