@@ -1,8 +1,22 @@
-# React + Vite
+# Projects Features: 
+ 1. In this project user can select multiple item to keep it to the cart.
+ 2. Items will not be added to the cart repeatedly.
+ 3. Total cost and credit hours are calculating dynamically.
+ 4. A toast will be notified while adding same item in the card and total credit hour crossed over 20hrs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Managing State in the Assignment
+ ### 1. Importing dependencies : 
+        I used `useState` hook to manage state and `useEffect` hook to fetch data from the data.json file. 
+        so that i import those hooks from `react` library.
+### 2. Initializing states according to the project requirement : 
+        `useState` returns a variable and a function. The variable can contain an array or any value initially.
+### 3. Updating the states using the function :
+        setFunction is used to update the state
+### 4. Using State in JSX :
+        `<Cart 
+            totalCost={totalCost}
+            remaining={remaining}
+            selectedCourses={selectedCourses}
+            >
+        </Cart>`
